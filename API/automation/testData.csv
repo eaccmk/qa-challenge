@@ -1,0 +1,9 @@
+switch,power,volt,status,cause
+on,,,200,"Switch ON without power"
+on,power,20,200,"Switch ON with power 20"
+on,power,-1,400,"Switch ON with Power -1 should not be accepted"
+on,power,300,400,"Switch ON with Power 300 should not be accepted"
+off,,,200,"Switch OFF without power"
+off,power,20,404,"Switch OFF with power parameters sould have been 'Page not found'"
+test,,,400,"Passing Incorrect value of swicth 'test' (non: on/off)"
+test,power,20,400,"Passing Incorrect value of swicth (non: on/off) with power"

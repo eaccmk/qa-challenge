@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "18f4b983-9224-4807-9158-fdbe5712f0a5",
+		"name": "QA-challange",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET/url",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "70d577c1-11cc-41c2-89b4-a71e43c8875f",
+						"type": "text/javascript",
+						"exec": [
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "ddc03e76-2a37-4bfc-8e8a-8556d7366606",
+						"type": "text/javascript",
+						"exec": [
+							"pm.test(\"API Response Status Code matches\", function() {",
+									"pm.response.to.have.status(200);",
+							"});",
+							"console.log(data.cause)"
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{API_URL}}",
+					"host": [
+						"{{API_URL}}"
+					],
+					"path": [
+					]
+				},
+				"description": "API Performance test - using k6 "
+			},
+			"response": []
+		}
+	]
+}

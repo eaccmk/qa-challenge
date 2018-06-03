@@ -1,0 +1,17 @@
+- Initial SetUp
+- 1st successfull automation with Assertion
+- Implement BDD
+- Save Report
+- Run using CLI `$ testcafe chrome ./WEB/src/app/phpTravels/smoke/webAutomation.js'
+
+Reference:
+url "https://www.phptravels.net/";
+usedId = "user@phptravels.com";
+const password = "demouser"; 
+
+Relevent EXTRA POINTS for WEB automation:
+
+1. Run Services automation regression in a CI tool like circle-ci, shippable, AWS codebuild
+2. Deploy a Selenium grid with Docker and run phptravels smoke test in Chrome and Firefox
+3. Run lighthouse performance test for http://phptravels.com/demo/ homepage and 3 other pages you think are relevant
+4. Fire off SoapUI tests by sending the SoapUI project file to a docker container.

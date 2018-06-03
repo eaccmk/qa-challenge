@@ -1,0 +1,12 @@
+Relevent EXTRA POINTS for API:
+
+1. Run Services automation regression in a CI tool like circle-ci, shippable, AWS codebuild
+
+2. Fire off SoapUI tests by sending the SoapUI project file to a docker container. 
+
+
+
+* Areas couldnt cover completely:
+    - [ ] Mobile Automation (_couldnt get hold on that_)
+    - [ ] WEb automation learnt and did a basic test using testCafe (_nice tool_)
+    - docker / aws are the areas where I am recently growing my understanding
