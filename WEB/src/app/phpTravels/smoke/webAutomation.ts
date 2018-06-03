@@ -1,14 +1,18 @@
-import { Selector } from 'testcafe'
-// import { landingPage } from "..\pageObjects";
+import { Selector } from 'testcafe';
+import pageObjClass = require("../pageObjects/landingPage");
 
-fixture `Getting Started`
+let poc = new pageObjClass();
+
+fixture `WEB Automation`
     .page `https://www.phptravels.net/`;
+   
 
-    test('Enter ', async t => {
+    test('Book a FLIGHT', async t => {
         await t
-            .typeText('#select2-search', 'New York')
-            .click('#btn btn-lg btn-block btn-danger pfb0 loader')
-    
-            // Use the assertion to check if the actual header text is equal to the expected one
-            // .expect(Selector('#article-header').innerText).eql('Thank you, John Smith!');
+            .click(poc.flightsTab)
+            .wait(3000) // without wait it was failing on my machine (slow internet)
+
+            // Introducing Assertions here 
+            .expect(poc.flightSource.exists).ok()
+            .expect(poc.flightSource).ok();
     });

@@ -1,13 +1,13 @@
-// import { Selector } from 'testcafe';
+import { Selector } from 'testcafe';
+// import * as waits from '../utilities/waits';
 
-// export const elements = {
-// loginButton: element(by.buttonText('Login'))
+class pageObjClass {
+flightsTab = Selector('#body-section > section > div.cell > div > div.col-md-12 > ul > li:nth-child(2) > a > span.hidden-xs');
+flightSource = Selector('#s2id_location_from > a > span.select2-chosen');
+}
 
-// const homePageUrl = "https://www.phptravels.net/";
-// const article = Selector('.article-content');
-// const usedId = "user@phptravels.com";
-// const password = "demouser"; 
+export = pageObjClass;
 
-// // Read more at: https://phptravels.com/demo/
-// };
-
+// ToDo - Hotel 
+// ToDo - Tours
+// Reporting
