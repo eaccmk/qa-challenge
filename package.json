@@ -1,0 +1,23 @@
+{
+  "name": "qa-challenge",
+  "version": "0.0.1",
+  "description": "QA Test - Quantas",
+  "author": "Millan Kaul",
+  "contributor": [
+    "Millan Kaul <eaccmk@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://Eaccmk@bitbucket.org/Eaccmk/qa-challenge.git"
+  },
+  "dependencies": {
+    "bootstrap": "3.3.7",
+    "core-js": "^2.4.1",
+    "css-element-queries": "^0.4.0",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "@types/node": "^7.0.5",
+    "zip-dir": "^1.0.2"
+  }
+}
